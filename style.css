@@ -5,7 +5,7 @@
 }
 html,
 body {
-  background-color: #e4f4fd;
+  background-color: #ffffff;
   display: flex;
   height: 100%;
   width: 100%;
@@ -67,4 +67,46 @@ body {
 
 .heading {
   color: #133041;
+}
+
+.lijevipadding {
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.inputbox {
+  display: flex;
+  border-radius: 8px;
+  border: 1px solid;
+}
+
+.euro {
+  text-align: center;
+  width: 20px;
+  height: 100%;
+  background-color: #e4f4fd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.forma {
+  width: 100%;
+  height: auto;
+}
+
+.inputbox input {
+  border: none;
+  width: 100%;
+  height: 60px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
