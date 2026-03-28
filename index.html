@@ -53,12 +53,22 @@
             <p class="donjamargina">Mortgage Type</p>
             <div class="radio vecadonjamargina">
               <label for="type" class="option donjamargina"
-                ><input type="radio" name="choice" value="option1" />
-                <p>Repayment</p></label
+                ><input
+                  type="radio"
+                  name="choice"
+                  value="option1"
+                  id="option1"
+                />
+                <span>Repayment</span></label
               >
               <label for="type" class="option"
-                ><input type="radio" name="choice" value="option2" />
-                <p>Interest Only</p></label
+                ><input
+                  type="radio"
+                  name="choice"
+                  value="option2"
+                  id="option2"
+                />
+                <span>Interest Only</span></label
               >
             </div>
             <button class="button" type="submit">
@@ -74,7 +84,7 @@
       </div>
       <div class="right">
         <div class="padding">
-          <div class="prozor">
+          <div class="prozor" id="main">
             <img
               class="slika"
               src="./slike/calculator.svg"
@@ -88,6 +98,21 @@
               Complete the form and click “calculate repayments” to see what
               your monthly repayments would be.
             </h2>
+          </div>
+          <!--resoult screen-->
+          <div class="prozorResult" id="result">
+            <h1 class="naslov">Your results</h1>
+            <p class="textResult">
+              Your results are shown below based on the information you
+              provided. To adjust the results, edit the form and click
+              “calculate repayments” again.
+            </p>
+            <div class="rezultat">
+              <p>Your monthly repayments</p>
+              <p>€1,797.74</p>
+              <p>Total you'll repay over the term</p>
+              <p>€539,322.94</p>
+            </div>
           </div>
         </div>
       </div>

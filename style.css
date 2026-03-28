@@ -185,7 +185,7 @@ body {
   display: flex;
   gap: 5px;
   padding: 20px;
-  background-color: #d8db2f;
+  background-color: rgba(216, 219, 47, 1);
   border-radius: 40px;
   border: none 1px;
   justify-content: center;
@@ -197,4 +197,41 @@ body {
 
 .vecadonjamargina {
   margin-bottom: 40px;
+}
+
+.option:has(input:checked) {
+  background-color: rgba(216, 219, 47, 0.5);
+  accent-color: #d8db2f;
+}
+input[type="radio"] {
+  transform: scale(1.5);
+  accent-color: #d8db2f;
+  border: 1px;
+  padding: 10px;
+}
+
+#main {
+  display: none;
+}
+
+.textResult {
+  text-align: left;
+  color: #9abed5;
+}
+
+.prozorResult {
+  width: 100%;
+  display: flex;
+  text-align: left;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.rezultat {
+  padding: 32px;
+  margin-top: 32px;
+  background-color: #133041;
+  border-top: #d8db2f solid 3px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
