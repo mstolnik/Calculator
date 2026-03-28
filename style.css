@@ -83,6 +83,7 @@ body {
   display: flex;
   border-radius: 8px;
   border: 1px solid;
+  width: 100%;
 }
 
 .euro {
@@ -96,6 +97,7 @@ body {
   padding: 20px;
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
+  font-weight: bold;
 }
 
 .forma {
@@ -109,4 +111,90 @@ body {
   height: 60px;
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
+}
+
+.margine {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.inputflex {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  width: 45%;
+}
+
+.inputflexbig {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  width: 100%;
+}
+
+.years {
+  text-align: center;
+  width: 100px;
+  height: 100%;
+  background-color: #e4f4fd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  font-weight: bold;
+}
+
+.inputyears {
+  border: none;
+  width: 100%;
+  height: 60px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.percentage {
+  text-align: center;
+  width: 20px;
+  height: 100%;
+  background-color: #e4f4fd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  font-weight: bold;
+}
+
+.option {
+  display: flex;
+  gap: 15px;
+  border-radius: 10px;
+  padding: 20px;
+  border: solid 1px;
+  font-weight: bold;
+}
+
+.donjamargina {
+  margin-bottom: 10px;
+}
+
+.button {
+  display: flex;
+  gap: 5px;
+  padding: 20px;
+  background-color: #d8db2f;
+  border-radius: 40px;
+  border: none 1px;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  font-weight: bold;
+  font-size: large;
+}
+
+.vecadonjamargina {
+  margin-bottom: 40px;
 }

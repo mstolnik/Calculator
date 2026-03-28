@@ -15,11 +15,60 @@
             <a class="clearall">Clear All</a>
           </div>
           <form class="forma">
-            <label for="amount">Mortgage Amount</label>
-            <div class="inputbox">
-              <span class="euro">€</span>
-              <input type="text" id="amount" name="amount" required />
+            <div class="margine inputflexbig">
+              <label for="amount">Mortgage Amount</label>
+              <div class="inputbox">
+                <span class="euro">€</span>
+                <input type="text" id="amount" name="amount" required />
+              </div>
             </div>
+            <div class="redak margine">
+              <div class="inputflex">
+                <label for="years">Mortgage Term</label>
+                <div class="inputbox">
+                  <input
+                    class="inputyears"
+                    type="number"
+                    id="years"
+                    name="years"
+                    required
+                  />
+                  <span class="years">years</span>
+                </div>
+              </div>
+              <div class="inputflex">
+                <label for="rate">Interest Rate</label>
+                <div class="inputbox">
+                  <input
+                    class="inputyears"
+                    type="number"
+                    id="rate"
+                    name="rate"
+                    required
+                  />
+                  <span class="percentage">%</span>
+                </div>
+              </div>
+            </div>
+            <p class="donjamargina">Mortgage Type</p>
+            <div class="radio vecadonjamargina">
+              <label for="type" class="option donjamargina"
+                ><input type="radio" name="choice" value="option1" />
+                <p>Repayment</p></label
+              >
+              <label for="type" class="option"
+                ><input type="radio" name="choice" value="option2" />
+                <p>Interest Only</p></label
+              >
+            </div>
+            <button class="button" type="submit">
+              <img
+                class="icon"
+                src="./slike/ph_calculator-fill.svg"
+                alt="slika"
+              />
+              <p>Calculate Repayments</p>
+            </button>
           </form>
         </div>
       </div>
