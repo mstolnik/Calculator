@@ -193,6 +193,7 @@ body {
   width: 400px;
   font-weight: bold;
   font-size: large;
+  margin-top: 40px;
 }
 
 .vecadonjamargina {
@@ -210,7 +211,7 @@ input[type="radio"] {
   padding: 10px;
 }
 
-#main {
+#result {
   display: none;
 }
 
@@ -234,4 +235,79 @@ input[type="radio"] {
   border-top: #d8db2f solid 3px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+}
+
+.rata {
+  color: #9abed5;
+  margin-bottom: 10px;
+}
+
+.repaymentResult {
+  color: #d8db2f;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.separator {
+  width: 100%;
+  height: 1px;
+  background-color: #9abed5;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.term {
+  color: #9abed5;
+  margin-bottom: 10px;
+}
+
+.final {
+  color: white;
+  font-weight: bold;
+}
+
+.required {
+  color: red;
+}
+
+#amountRequired {
+  display: none;
+}
+
+#yearsRequired {
+  display: none;
+}
+
+#rateRequired {
+  display: none;
+}
+
+#choiceRequired {
+  display: none;
+}
+
+.gornjaMargina {
+  margin-top: 10px;
+}
+
+@media (max-width: 1024px) {
+  .ekran {
+    flex-direction: column;
+  }
+  .left {
+    width: 100%;
+  }
+  .right {
+    width: 100%;
+    border-radius: 0px 0px 0px 0px;
+  }
+  .button {
+    width: 80%;
+  }
+  .lijevipadding {
+    padding: 10px;
+  }
+  .padding {
+    padding: 10px;
+  }
 }

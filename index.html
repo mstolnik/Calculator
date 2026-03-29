@@ -12,46 +12,49 @@
         <div class="lijevipadding">
           <div class="redak">
             <h1 class="heading">Mortgage Calculator</h1>
-            <a class="clearall">Clear All</a>
+            <a class="clearall" id="all">Clear All</a>
           </div>
           <form class="forma">
             <div class="margine inputflexbig">
               <label for="amount">Mortgage Amount</label>
-              <div class="inputbox">
-                <span class="euro">€</span>
-                <input type="text" id="amount" name="amount" required />
+              <div class="inputbox" id="amountBorder">
+                <span class="euro" id="euro">€</span>
+                <input type="text" id="amount" name="amount" />
               </div>
+              <p class="required" id="amountRequired">This field is required</p>
             </div>
             <div class="redak margine">
               <div class="inputflex">
                 <label for="years">Mortgage Term</label>
-                <div class="inputbox">
+                <div class="inputbox" id="yearsBorder">
                   <input
                     class="inputyears"
                     type="number"
                     id="years"
                     name="years"
-                    required
                   />
-                  <span class="years">years</span>
+                  <span class="years" id="yearsBox">years</span>
                 </div>
+                <p class="required" id="yearsRequired">
+                  This field is required
+                </p>
               </div>
               <div class="inputflex">
                 <label for="rate">Interest Rate</label>
-                <div class="inputbox">
+                <div class="inputbox" id="rateBorder">
                   <input
                     class="inputyears"
                     type="number"
                     id="rate"
                     name="rate"
-                    required
                   />
-                  <span class="percentage">%</span>
+                  <span class="percentage" id="percentage">%</span>
                 </div>
+                <p class="required" id="rateRequired">This field is required</p>
               </div>
             </div>
             <p class="donjamargina">Mortgage Type</p>
-            <div class="radio vecadonjamargina">
+            <div class="radio">
               <label for="type" class="option donjamargina"
                 ><input
                   type="radio"
@@ -71,6 +74,9 @@
                 <span>Interest Only</span></label
               >
             </div>
+            <p class="required gornjaMargina" id="choiceRequired">
+              This field is required
+            </p>
             <button class="button" type="submit">
               <img
                 class="icon"
@@ -108,10 +114,11 @@
               “calculate repayments” again.
             </p>
             <div class="rezultat">
-              <p>Your monthly repayments</p>
-              <p>€1,797.74</p>
-              <p>Total you'll repay over the term</p>
-              <p>€539,322.94</p>
+              <p class="rata" id="rata">Your monthly repayments</p>
+              <p class="repaymentResult" id="repaymentResult">€1,797.74</p>
+              <div class="separator"></div>
+              <p class="term" id="term">Total you'll repay over the term</p>
+              <p class="final" id="final">€539,322.94</p>
             </div>
           </div>
         </div>
